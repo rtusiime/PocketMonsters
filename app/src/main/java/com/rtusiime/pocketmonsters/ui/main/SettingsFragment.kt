@@ -5,21 +5,25 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import com.rtusiime.pocketmonsters.R
+import com.rtusiime.pocketmonsters.databinding.FragmentSettingsBinding
 
 class SettingsFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+    private val sharedViewModel: MainViewModel by activityViewModels()
+   private var binding: FragmentSettingsBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false)
+        val bindingSettings = FragmentSettingsBinding.inflate(inflater, container, false)
+        binding = bindingSettings
+        binding?.apply {
+
+        }
+        return bindingSettings.root
     }
 
 
