@@ -1,4 +1,3 @@
 package com.rtusiime.pocketmonsters.ui.model
 
-class Pokemon {
-}
+data class Pokemon(var name: String, var base_experience: Int, var weight: Int, var height: Int, var image: String?, var id: Int )
