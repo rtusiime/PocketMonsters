@@ -1,29 +1,24 @@
 package com.rtusiime.pocketmonsters.ui.main
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.preference.PreferenceFragmentCompat
 import com.rtusiime.pocketmonsters.R
 import com.rtusiime.pocketmonsters.databinding.FragmentSettingsBinding
 
-class SettingsFragment : Fragment() {
+class SettingsFragment : PreferenceFragmentCompat() {
 
-    private val sharedViewModel: MainViewModel by activityViewModels()
-   private var binding: FragmentSettingsBinding? = null
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val bindingSettings = FragmentSettingsBinding.inflate(inflater, container, false)
-        binding = bindingSettings
-        binding?.apply {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        menu.clear()
+    }
 
-        }
-        return bindingSettings.root
+    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+        setHasOptionsMenu(true)
+        setPreferencesFromResource(R.xml.preferences_fragment,rootKey)
     }
 
 

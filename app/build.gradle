@@ -51,4 +51,26 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // Retrofit  Retrofit Scalars Converter
+    def retrofit_version = '2.9.0'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    // Preferences
+    implementation "androidx.preference:preference-ktx:1.1.1"
+
+    // Picasso
+    def picassoVersion = "2.71828"
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+
+    // A couple of picasso transformations
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // GPU Filters
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
 }
