@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <CheckBoxPreference
-        android:title="@string/pokemon_weight"
-        android:defaultValue="false"
-        android:key="show_message_at_end"/>
 
     <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="show_message_at_mid"/>
-
-    <CheckBoxPreference
-    android:title="@string/sprite"
-    android:defaultValue="true"
-    android:key="show_message_at_start"/>
+        android:defaultValue="true"
+        android:key="show_message_at_start"
+        android:title="@string/show_start_dialogue" />
 
     <SwitchPreferenceCompat
         android:id="@+id/choose_theme_switch"
@@ -27,4 +19,12 @@
         android:entryValues="@array/font_size_values"
         android:key="font_size"
         android:title="@string/font_size"/>
+
+    <ListPreference
+        android:summary="%s"
+        android:defaultValue="0"
+        android:entries="@array/effects"
+        android:entryValues="@array/effect_values"
+        android:key="effect_selection"
+        android:title="@string/effect"/>
 </PreferenceScreen>

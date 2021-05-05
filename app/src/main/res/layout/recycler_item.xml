@@ -7,9 +7,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_columnWeight="1"
-    android:layout_margin="10dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
     android:orientation="horizontal"
-    app:cardBackgroundColor="@color/design_default_color_secondary"
+    app:cardBackgroundColor="@color/blue_700"
+    android:outlineSpotShadowColor="@color/red"
     app:layout_constraintHorizontal_weight="1"
     app:layout_constraintVertical_weight="1">
 
@@ -37,7 +39,7 @@
             android:elevation="10dp"
             android:gravity="center"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="80sp"
             tools:text="55" />
 
     </LinearLayout>

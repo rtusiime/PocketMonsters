@@ -4,4 +4,6 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowBackground">@drawable/launcher_background</item>
     </style>
+
+
 </resources>

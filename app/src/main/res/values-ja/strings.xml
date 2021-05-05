@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ポケットモンスター</string>
+    <string name="hello_blank_fragment">こんにちは空白のフラグメント</string>
+    <string name="pokemon_type">タイプ</string>
+    <string name="pokemon_number">数 </string>
+    <string name="pokemon_weight">重量</string>
+    <string name="theme">テーマ</string>
+    <string name="light">光</string>
+    <string name="dark">暗いテーマ</string>
+    <string name="picture_type">画像タイプ</string>
+    <string name="color">色</string>
+    <string name="bw">黒、白</string>
+    <string name="font_size">フォントサイズ</string>
+    <string name="small">小さい</string>
+    <string name="Large">大</string>
+    <string name="settings">設定</string>
+    <string name="info">情報</string>
+    <string name="show_start_dialogue">開始ダイアログを表示する</string>
+    <string name="ok">はい</string>
+    <string name="welcome">ポケモンへようこそ </string>
+    <string name="show_message">開始時にメッセージを表示</string>
+    <string name="reset">リセット</string>
+    <string name="copyright">Copyright &#169; 2021, Smugdemeanor™</string>
+    <string name="brag">驚きのためにタップ</string>
+    <string name="effect">効果</string>
+    <string name="meh">Meh</string>
+</resources>

@@ -16,7 +16,7 @@
         <!-- Customize your theme here. -->
 
         <item name="android:windowBackground">@color/yellow</item>
-        <item name="android:colorBackground">@color/yellow</item>
+        <item name="android:colorBackground">@color/gold</item>
         <item name="android:textColor">@color/red</item>
     </style>
 

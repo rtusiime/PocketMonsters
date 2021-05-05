@@ -47,6 +47,9 @@
             app:destination="@id/mainFragment"
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_infoFragment_to_secretDialog"
+            app:destination="@id/secretDialog" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -59,4 +62,8 @@
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right" />
     </fragment>
+    <dialog
+        android:id="@+id/secretDialog"
+        android:name="com.rtusiime.pocketmonsters.ui.SecretDialog"
+        android:label="SecretDialog" />
 </navigation>

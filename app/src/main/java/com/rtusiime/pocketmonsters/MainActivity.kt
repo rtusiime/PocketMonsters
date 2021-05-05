@@ -11,6 +11,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.preference.PreferenceManager
 import com.rtusiime.pocketmonsters.ui.main.MainFragment
+import java.io.BufferedWriter
 
 class MainActivity : AppCompatActivity() {
 
@@ -59,17 +60,19 @@ class MainActivity : AppCompatActivity() {
                     remove(SET_DARK_THEME)
                     remove(SHOW_MESSAGE_AT_START)
                     remove(FONT_SIZE)
+                    remove(EFFECT_SELECTION)
                     apply()
                 }
                 true
             }
 
             R.id.action_settings -> {
-                navHostFragment.navController.navigate(R.id.action_mainFragment_to_settingsFragment)
+
+                this.navHostFragment.navController.navigate(R.id.action_mainFragment_to_settingsFragment)
                 true
             }
             R.id.action_info -> {
-                navHostFragment.navController.navigate(R.id.action_mainFragment_to_infoFragment)
+                this.navHostFragment.navController.navigate(R.id.action_mainFragment_to_infoFragment)
                 true
             }
             else  -> super.onOptionsItemSelected(item)
@@ -95,5 +98,7 @@ class MainActivity : AppCompatActivity() {
         const val SHOW_MESSAGE_AT_START = "show_message_at_start"
         const val SET_DARK_THEME = "set_dark_theme"
         const val FONT_SIZE = "font_size"
+        const val EFFECT_SELECTION = "effect_selection"
+
     }
 }
